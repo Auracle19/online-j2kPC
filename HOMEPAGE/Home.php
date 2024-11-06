@@ -6,5 +6,5 @@ if (!isset($_SESSION['username'])) {
 }
 
 // I-include ang HTML content
-include('../HOMEPAGE/Home.html');
+include('../HOMEPAGE/index.html');
 ?>
