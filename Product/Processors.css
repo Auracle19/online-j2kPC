@@ -1,0 +1,270 @@
+/* General Body Styles */
+body {
+    font-family: 'Teko', sans-serif;
+    background-color: #000; /* Black background */
+    color: #ffffff; /* Light text color */
+}
+
+/* Dropdown Menu Styles */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    background-color: #222; /* Dark dropdown */
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.dropdown-item {
+    color: #fff; /* White text for dropdown items */
+}
+
+.dropdown-item:hover {
+    background-color: #00ff00; /* Highlight on hover */
+    color: #000; /* Dark text on hover */
+}
+
+/* Navbar Search Styles */
+.navbar .d-flex {
+    justify-content: center; /* Center the search bar horizontally */
+    flex-grow: 1; /* Allow the search bar to grow */
+}
+
+.navbar .form-control {
+    max-width: 400px; /* Set a max width for the search input */
+}
+
+/* Container and Header Styles */
+.container {
+    width: 1000px;
+    margin: auto;
+    transition: 0.5s;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    margin-top: 50px;
+    align-items: center; /* Center items vertically */
+}
+
+/* Logo Styles */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 50px; /* Adjust size as needed */
+    margin-right: 10px; /* Space between icon and text */
+}
+
+.logo-text {
+    font-family: 'Roboto', sans-serif; /* Use the same font as the body */
+    font-size: 2.5em; /* Larger text for prominence */
+    font-weight: bold; /* Make it bold for emphasis */
+    color: #E8BC0E; /* Vibrant color for the logo text */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+/* Shopping Cart Styles */
+header .shopping {
+    position: relative;
+    text-align: right;
+}
+
+header .shopping img {
+    width: 40px;
+}
+
+header .shopping span {
+    background: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    top: -5px;
+    left: 80%;
+    padding: 3px 10px;
+}
+
+/* Product List Styles */
+.list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    margin-top: 50px;
+}
+
+.list .item {
+    text-align: center;
+    background-color: #000000; /* Item background color */
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(236, 232, 232, 0.5); /* Shadow for depth */
+    transition: transform 0.3s; /* Smooth scaling transition */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.list .item:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.list .item img {
+    width: 90%;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 8px; /* Rounded corners for images */
+}
+
+.list .item .title {
+    font-weight: 600;
+}
+
+.list .item .price {
+    margin: 10px 0; /* Add margin for spacing */
+}
+
+.list .item button {
+    background-color: #094bce;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded button corners */
+    cursor: pointer; /* Pointer cursor for button */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.list .item button:hover {
+    background-color: #E8BC0E; /* Change to vibrant color on hover */
+}
+
+/* Shopping Cart Card Styles */
+.card {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 500px;
+    background: linear-gradient(135deg, #453E3B, #1C1F25); /* Gradient background */
+    height: 100vh;
+    transition: 0.5s;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+
+.active .card {
+    left: calc(100% - 500px);
+}
+
+.card h1 {
+    color: #E8BC0E; /* Vibrant header color */
+    font-weight: 100;
+    margin: 0;
+    padding: 0 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+/* Checkout Section Styles */
+.card .checkOut {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.card .checkOut div {
+    background-color: #E8BC0E;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.card .checkOut div:nth-child(2) {
+    background-color: #1C1F25;
+    color: #fff;
+}
+
+.card .checkOut div:hover {
+    background-color: #e70d0d; /* Change to white on hover */
+    color: #1C1F25; /* Change text color on hover */
+}
+
+.card .checkOut .orderNow {
+    background-color: #E8BC0E; /* Button background color */
+    color: #1C1F25; /* Button text color */
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px; /* Match height with other buttons */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.card .checkOut .orderNow:hover {
+    background-color: #1C1F25; /* Darker on hover */
+    color: #fff; /* White text on hover */
+}
+
+/* Shopping Cart List Styles */
+.listCard li {
+    display: grid;
+    grid-template-columns: 100px repeat(3, 1fr);
+    color: #fff;
+    row-gap: 10px;
+}
+
+.listCard li div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.listCard li img {
+    width: 90%;
+}
+
+/* Modal Styles */
+.modal-content {
+    background-color: #222; /* Dark modal background */
+    color: #fff; /* White text */
+}
+
+.modal-header,
+.modal-footer {
+    border: none; /* Remove border */
+}
+
+#map {
+    height: 300px; /* Map height */
+    margin-top: 10px; /* Spacing */
+}
+
+/* Button Styles in List */
+.listCard li button {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 5px; /* Rounded button corners */
+}
+
+/* Count Styles */
+.listCard .count {
+    margin: 0 10px;
+}
+
+.item img {
+    width: 100%; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 200px; /* Limit height to keep them landscape */
+}
